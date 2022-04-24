@@ -3,8 +3,6 @@ require('pry')
 class Anagram
   attr_accessor(:word1, :word2)
   def initialize(word1, word2)
-    # @word1 = word1.downcase().delete(" ")
-    # @word2 = word2.downcase().delete(" ")
     @word1 = word1.delete(' ').downcase.gsub(/[!@#$%^&*()-=_+|;':",.<>?']/, '').split(//).sort
     @word2 = word2.delete(' ').downcase.gsub(/[!@#$%^&*()-=_+|;':",.<>?']/, '').split(//).sort
   end
