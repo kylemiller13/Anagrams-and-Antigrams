@@ -10,7 +10,8 @@
 * Gem: 'rspec'
 * Gem: 'pry'
 
-## Description:_An application that takes in two inputs: a word or a sentence. The program then checks to see if the two strings are anagrams or antigrams of one another(spacing, punctuation, and capitaliztion do not cuase errors)._
+## Description:
+_An application that takes in two inputs: a word or a sentence. The program then checks to see if the two strings are anagrams or antigrams of one another(spacing, punctuation, and capitaliztion do not cuase errors)._
 
 ## Setup/Installation Requirements
 
