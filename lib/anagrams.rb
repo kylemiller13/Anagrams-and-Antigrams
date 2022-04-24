@@ -17,13 +17,24 @@ class Anagram
     return false
   end
 
+  def antigram_checker()
+    phrase1 = @word1.split('')
+    phrase2 = @word2.split('')
+    phrase1.each do |letter|
+      if phrase2.include?(letter)
+        return true
+      end
+    end
+    return false
+  end
+
   def is_anagram()
     word1_arry = @word1.split('').sort
     word2_arry = @word2.split('').sort
-    # if word1_arry.length != word2_arry.length
-    #   return "is Not an anagram"
-    if vowel_checker() == false
-          return "is NOT an anagram"
+    if antigram_checker() == false
+      return "These words have no letter matches and are antigrams"
+    elsif vowel_checker() == false
+          return "You need to input actual words!"
     elsif word1_arry == word2_arry
           return "is an anagram"
         else
